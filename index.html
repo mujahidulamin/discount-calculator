@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl font-semibold text-center mt-8">Discount Calculator</h1>
+    </header>
+    <main>
+        <section class="bg-amber-500 p-8 mt-8 w-9/12 mx-auto rounded-lg">
+            <!-- <h1 class="font-semibold text-center">Your Coupon code is 'DOM'</h1>
+            <h3 class="text-2xl font-semibold text-center">$<span id="total-price">1000</span></h3> -->
+            <div class="grid lg:grid-cols-2 md:grid-cols-1 gap-4">
+                <div>
+                    <div class="grid grid-rows-2">
+                        <div>
+                            <label class="font-semibold"> Enter Your Amount: <br>
+                                <input id="amount-field" type="text" class="mt-2 mb-2 w-full rounded-lg p-3"
+                                    placeholder="Enter Amount">
+                            </label>
+                        </div>
+                        <div>
+                            <label class="font-semibold"> Coupon Code: <br>
+                                <input id="coupon-field" type="text" class="mt-2 w-full rounded-lg p-3"
+                                    placeholder="Write Your Discount Coupon">
+                            </label>
+                        </div>
+                        <div>
+                            <label class="font-semibold"> Discount: <br>
+                                <input id="discount-field" type="text" class="mt-2 w-full rounded-lg p-3"
+                                    placeholder="Write Your Discount Amount">
+                            </label>
+                        </div>
+                        <button id="apply-btn" class="bg-sky-300 w-full py-2 mt-4 rounded-lg hover:bg-amber-300">Apply
+                        </button>
+                    </div>
+                </div>
+                <div class="mt-16">
+                    <h1 class="text-2xl font-bold text-center">After Discount Your Final Balance</h1>
+                    <h3 class="text-center text-3xl font-semibold">$<span id="final-balance">00</span></h3>
+                    <h1 class="text-2xl font-bold text-center mt-8">Your Discount Price</h1>
+                    <h3 class="text-center text-3xl font-semibold">$<span id="discount-price">00</span></h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/discount.js"></script>
+</body>
+
+</html>
